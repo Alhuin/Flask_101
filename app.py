@@ -29,7 +29,7 @@ def index():
             r = requests.get(url)
         except:
             errors.append(
-                "Unable ro get URL. Please make sur it's valid and try again."
+                "Unable to get URL. Please make sure it's valid and try again."
             )
         if r:
             # get text
