@@ -1,1 +1,1 @@
-web: gunicorn app:app --preload
+web: sh heroku.sh
