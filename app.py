@@ -22,6 +22,7 @@ from models import Result
 def index():
     errors = []
     results = {}
+    r = False
     if request.method == 'POST':
         try:
             url = request.form['url']
