@@ -3,7 +3,6 @@ attrs==20.3.0
 click==7.1.2
 coverage==5.5
 Flask==1.1.2
--e git+https://github.com/Alhuin/flask_101.git@aa5cdc5576396599c7e6f4404fa29e5d814e4b38#egg=flaskr
 iniconfig==1.1.1
 isort==5.8.0
 itsdangerous==1.1.0
