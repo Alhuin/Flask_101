@@ -32,8 +32,9 @@ def create():
         
         if not title:
             error = 'Title is required.'
-        elif not body:
-            error = 'Body is required.'
+
+        if error is not None:
+            flash(error)
         else:
             db = get_db()
             db.execute(
@@ -42,8 +43,6 @@ def create():
             )
             db.commit()
             return redirect(url_for('blog.index'))
-
-        flash(error)
     
     return render_template('blog/create.html')
 
@@ -60,8 +59,6 @@ def update(id):
         
         if not title:
             error = 'Title is required.'
-        elif not body:
-            error = 'Body is required.'
 
         if error is not None:
             flash(error)

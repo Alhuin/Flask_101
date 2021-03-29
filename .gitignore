@@ -9,7 +9,7 @@ htmlcov/
 
 build/
 dist/
-*.egg-info/git 
+*.egg-info/
 
 .vscode/
 
